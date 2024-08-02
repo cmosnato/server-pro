@@ -13,21 +13,21 @@ function calR() {
         resistanceValue = ((line1 * 10) + line2) * multiplier;
     } else if (numberOfBands == 5) {
         const line1 = parseInt(document.getElementById('line1').value);
-        const band2 = parseInt(document.getElementById('line2').value);
-        const band3 = parseInt(document.getElementById('line3').value);
+        const line2 = parseInt(document.getElementById('line2').value);
+        const line3 = parseInt(document.getElementById('line3').value);
         const multiplier = parseFloat(document.getElementById('line4.2').value);
         tolerance = parseFloat(document.getElementById('line5').value);
 
-        resistanceValue = ((line1 * 100) + (band2 * 10) + band3) * multiplier;
+        resistanceValue = ((line1 * 100) + (line2 * 10) + line3) * multiplier;
     } else if (numberOfBands == 6) {
-        const band1 = parseInt(document.getElementById('line1').value);
-        const band2 = parseInt(document.getElementById('line2').value);
-        const band3 = parseInt(document.getElementById('line3').value);
+        const line1 = parseInt(document.getElementById('line1').value);
+        const line2 = parseInt(document.getElementById('line2').value);
+        const line3 = parseInt(document.getElementById('line3').value);
         const multiplier = parseFloat(document.getElementById('line4.2').value);
         tolerance = parseFloat(document.getElementById('line5').value);
         temperatureCoefficient = parseFloat(document.getElementById('line6').value);
 
-        resistanceValue = ((band1 * 100) + (band2 * 10) + band3) * multiplier;
+        resistanceValue = ((line1 * 100) + (line2 * 10) + line3) * multiplier;
     }
 
     document.getElementById('resistor-value').innerText = `${resistanceValue} Ω ±${tolerance}%`;
