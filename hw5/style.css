@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     max-width: 1000px;
     margin: 20px auto;
@@ -13,12 +17,14 @@ body {
     border-radius: 10px;
     box-shadow: #ffffff;
 }
-header{
+
+header {
     background-color: #07115c;
     margin: 0;
     padding: 20px;
-    
+
 }
+
 header h1 {
     color: #ffffff;
     text-align: center;
@@ -53,9 +59,10 @@ header h2 {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: medium;
-   
+
 }
-.form select option{
+
+.form select option {
     background-color: rgb(105, 149, 199);
 }
 
@@ -74,13 +81,23 @@ button:hover {
     background-color: #345271;
 }
 
-#resistor-value {
-    font-size: 18px;
-    font-weight: bold;
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    text-align: center;
 }
 
-.hidden {
-    display: none;
+.result h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px; 
 }
+
+.result #resistor-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b31515;
+}
+
+
