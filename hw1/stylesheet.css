@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
-    max-height: 1000px;
+    
+    
+    
+}
+body{
     width: auto;
-    
-    
+    height: 100%;
 }
 header{
     /* margin-left: 150px; */
@@ -26,6 +29,7 @@ header h2{
     margin: 0 400px ;
     top: 0;
     left: 0;
+    
 }
 .phase4{
     margin: 0px 400px 100px 400px;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Resistor Auto</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculate Resistor Auto</h1>
+        <h2>คำนวณตัวต้านทานอัตโนมัติ</h2>
+    </header>
+    <div class="container">
+
+        <div class="number-of-bands">
+            <label>Number of Bands:</label>
+            <input type="radio" name="bands" id="bands-4" value="4" checked> 4 Band
+            <input type="radio" name="bands" id="bands-5" value="5"> 5 Band
+            <input type="radio" name="bands" id="bands-6" value="6"> 6 Band
+        </div>
+
+        <div class="form">
+            <label for="line1">แถบสีของตัวที่ 1</label>
+            <select id="line1" class="line1" required>
+                <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                <option value="0">ดำ (Black)</option>
+                <option value="1">น้ำตาล (Brown)</option>
+                <option value="2">แดง (Red)</option>
+                <option value="3">ส้ม (Orange)</option>
+                <option value="4">เหลือง (Yellow)</option>
+                <option value="5">เขียว (Green)</option>
+                <option value="6">ฟ้า (Blue)</option>
+                <option value="7">ม่วง (Violet)</option>
+                <option value="8">เทา (Grey)</option>
+                <option value="9">ขาว (White)</option>
+            </select>
+
+            <label for="line2">แถบสีของตัวที่ 2</label>
+            <select id="line2" class="line2" required>
+                <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                <option value="0">ดำ (Black)</option>
+                <option value="1">น้ำตาล (Brown)</option>
+                <option value="2">แดง (Red)</option>
+                <option value="3">ส้ม (Orange)</option>
+                <option value="4">เหลือง (Yellow)</option>
+                <option value="5">เขียว (Green)</option>
+                <option value="6">ฟ้า (Blue)</option>
+                <option value="7">ม่วง (Violet)</option>
+                <option value="8">เทา (Grey)</option>
+                <option value="9">ขาว (White)</option>
+            </select>
+
+            <label for="line3">แถบสีของตัวที่ 3 (ตัวคูณ)</label>
+            <select id="line3" class="line3" required>
+                <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                <option value="0">ดำ (Black)</option>
+                <option value="1">น้ำตาล (Brown)</option>
+                <option value="2">แดง (Red)</option>
+                <option value="3">ส้ม (Orange)</option>
+                <option value="4">เหลือง (Yellow)</option>
+                <option value="5">เขียว (Green)</option>
+                <option value="6">ฟ้า (Blue)</option>
+                <option value="7">ม่วง (Violet)</option>
+                <option value="8">เทา (Grey)</option>
+                <option value="9">ขาว (White)</option>
+                <option value="10">ทอง (Gold)</option>
+                <option value="11">เงิน (Silver)</option>
+            </select>
+
+
+            <div id="line4-container">
+                <label for="line4">แถบสีของตัวที่ 4 (ตัวคูณหรือความคลาดเคลื่อน)</label>
+                <select id="line4.1" class="line4.1">
+                    <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                    <option value="1">น้ำตาล(Brown) ±1%</option>
+                    <option value="2">แดง(Red) ±2%</option>
+                    <option value="5">ทอง(Gold) ±5%</option>
+                    <option value="10">เงิน(Silver) ±10%</option>
+                </select>
+                <select id="line4.2" class="line4.2" required>
+                    <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                    <option value="0">ดำ (Black)</option>
+                    <option value="1">น้ำตาล (Brown)</option>
+                    <option value="2">แดง (Red)</option>
+                    <option value="3">ส้ม (Orange)</option>
+                    <option value="4">เหลือง (Yellow)</option>
+                    <option value="5">เขียว (Green)</option>
+                    <option value="6">ฟ้า (Blue)</option>
+                    <option value="7">ม่วง (Violet)</option>
+                    <option value="8">เทา (Grey)</option>
+                    <option value="9">ขาว (White)</option>
+                    <option value="10">ทอง (Gold)</option>
+                    <option value="11">เงิน (Silver)</option>
+                </select>
+
+            </div>
+
+            <div id="line5-container" class="hidden">
+                <label for="line5">แถบสีของตัวที่ 5(ความคลาดเคลื่อน)</label>
+                <select id="line5" class="line5">
+                    <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                    <option value="1">น้ำตาล (Brown) ±1%</option>
+                    <option value="2">แดง (Red) ±2%</option>
+                    <option value="5">ทอง (Gold) ±5%</option>
+                    <option value="10">เงิน (Silver) ±10%</option>
+                </select>
+            </div>
+
+            <div id="line6-container" class="hidden">
+                <label for="line6">แถบสีของตัวที่ 6 (ค่าความคลาดเคลื่อนเพิ่มเติมหรือค่าสัมประสิทธิ์อุณหภูมิ)</label>
+                <select id="line6" class="line6">
+                    <option value="" disabled selected>เลือกสีที่ต้องการ</option>
+                    <option value="0">ขาว(White):0 ppm/°C</option> <!-- Temperature Coefficient 0 ppm/°C -->
+                    <option value="1">เทา(Grey):1 ppm/°C</option> <!-- Temperature Coefficient 1 ppm/°C -->
+                    <option value="5">ม่วง(Violet):5 ppm/°C</option> <!-- Temperature Coefficient 5 ppm/°C -->
+                    <option value="10">ฟ้า(Blue):10 ppm/°C</option> <!-- Temperature Coefficient 10 ppm/°C -->
+                    <option value="20">เขียว(Green):20 ppm/°C</option> <!-- Temperature Coefficient 20 ppm/°C -->
+                    <option value="25">เหลือง(Yellow):25 ppm/°C</option> <!-- Temperature Coefficient 25 ppm/°C -->
+                    <option value="15">ส้ม(Orange):15 ppm/°C</option> <!-- Temperature Coefficient 15 ppm/°C -->
+                    <option value="5">ม่วง(Violet):5 ppm/°C</option> <!-- Temperature Coefficient 5 ppm/°C -->
+                    <option value="50">แดง(Red):50 ppm/°C</option> <!-- Temperature Coefficient 50 ppm/°C -->
+                    <option value="100">น้ำตาล(Brown):100 ppm/°C</option> <!-- Temperature Coefficient 100 ppm/°C -->
+                </select>
+            </div>
+
+        </div>
+
+        <div>
+            <button onclick="calR()">Calculate</button>
+        </div>
+
+        <div id="resistor-value">Resistor value: </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('input[name="bands"]').forEach((radio) => {
+            radio.addEventListener('change', function () {
+                const selectedBand = this.value;
+                toggleBands(selectedBand);
+            });
+        });
+
+        function toggleBands(selectedBand) {
+            if (selectedBand == 4) {
+                document.getElementById('line4.1').classList.remove('hidden');
+                document.getElementById('line4.2').classList.add('hidden');
+                document.getElementById('line5-container').classList.add('hidden');
+                document.getElementById('line6-container').classList.add('hidden');
+                document.querySelector('label[for="line3"]').innerText = 'แถบสีของตัวที่ 3 (ตัวคูณ)';
+                document.querySelector('label[for="line4"]').innerText = 'แถบสีของตัวที่ 4 (ความคลาดเคลื่อน)';
+            } else if (selectedBand == 5) {
+
+                document.getElementById('line4.1').classList.add('hidden');
+                document.getElementById('line4.2').classList.remove('hidden');
+                document.getElementById('line5-container').classList.remove('hidden');
+                document.getElementById('line6-container').classList.add('hidden');
+                document.querySelector('label[for="line3"]').innerText = 'แถบสีของตัวที่ 3';
+                document.querySelector('label[for="line4"]').innerText = 'แถบสีของตัวที่ 4 (ตัวคูณ)';
+            } else if (selectedBand == 6) {
+                document.getElementById('line4.1').classList.add('hidden');
+                document.getElementById('line4.2').classList.remove('hidden');
+                document.getElementById('line5-container').classList.remove('hidden');
+                document.getElementById('line6-container').classList.remove('hidden');
+                document.querySelector('label[for="line3"]').innerText = 'แถบสีของตัวที่ 3';
+                document.querySelector('label[for="line4"]').innerText = 'แถบสีของตัวที่ 4 (ตัวคูณ)';
+                document.querySelector('label[for="line5"]').innerText = 'แถบสีของตัวที่ 5 (ความคลาดเคลื่อน)';
+            }
+        }
+
+
+        toggleBands(4);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131b2d;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: #ffffff;
+}
+header{
+    background-color: #07115c;
+    margin: 0;
+    padding: 20px;
+    
+}
+header h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+header h2 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.number-of-bands,
+.form {
+    margin-bottom: 20px;
+}
+
+.number-of-bands label,
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.number-of-bands input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: medium;
+   
+}
+.form select option{
+    background-color: rgb(105, 149, 199);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #345271;
+}
+
+#resistor-value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
