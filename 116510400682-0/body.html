@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใบสมัครงาน - บริษัท วิษณุ เทคโนพลัส จำกัด</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="">
+        <h1>บริษัท วิษณุ เทคโนพลัส จำกัด</h1>
+        <h2>VISASU TECHOPLUS CO.,LTD</h2>
+        <div class="photo-table">
+            <img src="persopn_icon.png" alt="person icon">
+        </div>
+    </header>
+    
+    <form action="insert.php" method="POST">
+        <section class="phase1">
+            <h2>ใบสมัครงาน</h2>
+            <label for="fname">ชื่อ - นามสกุล:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">ชื่อเล่น:</label>
+            <input type="text" id="Nname" name="lname"><br>
+            
+            <label for="Nameeng">Name in English:</label>
+            <input type="text" id="Nameeng" name="Nameeng">
+            <label for="gender">เพศ:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">หญิง</label><br>
+
+            <label for="job">สมัครตำแหน่ง:</label>
+            <input type="text" id="job" name="job" required><br>
+
+            <label for="salary">เงินเดือนที่ต้องการ:</label>
+            <input type="number" id="salary" name="salary" required>
+            <label for="bath">บาท/</label>
+            <input type="radio" id="month" name="salary_period" value="month" required>
+            <label for="month">เดือน</label>
+            <input type="radio" id="one" name="salary_period" value="one">
+            <label for="one">วัน</label><br>
+        </section>
+
+        <section class="phase2">
+            <h2>ประวัติส่วนตัว</h2>
+            <label for="no">ที่อยู่ตามทะเบียนบ้าน - เลขที่:</label>
+            <input type="number" id="no" name="no" required>
+            <label for="group">หมู่ที่:</label>
+            <input type="number" id="group" name="group">
+            <label for="road">ถนน:</label>
+            <input type="text" id="road" name="road"><br>
+
+            <label for="district">ตำบล/แขวง:</label>
+            <input type="text" id="district" name="district" required>
+            <label for="county">อำเภอ/เขต:</label>
+            <input type="text" id="county" name="county" required>
+            <label for="province">จังหวัด:</label>
+            <input type="text" id="province" name="province" required><br>
+
+            <label for="Postalcode">รหัสไปรษณีย์:</label>
+            <input type="number" id="Postalcode" name="Postalcode" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="nonow">ที่อยู่ปัจจุบัน - เลขที่:</label>
+            <input type="number" id="nonow" name="nonow" required>
+            <label for="groupnow">หมู่ที่:</label>
+            <input type="number" id="groupnow" name="groupnow">
+            <label for="roadnow">ถนน:</label>
+            <input type="text" id="roadnow" name="roadnow"><br>
+
+            <label for="districtnow">ตำบล/แขวง:</label>
+            <input type="text" id="districtnow" name="districtnow" required>
+            <label for="countynow">อำเภอ/เขต:</label>
+            <input type="text" id="countynow" name="countynow" required>
+            <label for="provincenow">จังหวัด:</label>
+            <input type="text" id="provincenow" name="provincenow" required><br>
+
+            <label for="Postalcodenow">รหัสไปรษณีย์:</label>
+            <input type="number" id="Postalcodenow" name="Postalcodenow" required>
+            <label for="phonehomenow">โทรศัพท์:</label>
+            <input type="text" id="phonehomenow" name="phonehomenow" required>
+            <label for="phonenow">มือถือ:</label>
+            <input type="text" id="phonenow" name="phonenow" required><br>
+
+            <label for="whoathome">บ้านที่อาศัยอยู่:</label>
+            <input type="radio" id="atfamily" name="whoathome" value="atfamily" required>
+            <label for="atfamily">อาศัยอยู่กับครอบครัว</label>
+            <input type="radio" id="myhome" name="whoathome" value="myhome">
+            <label for="myhome">บ้านตัวเอง</label>
+            <input type="radio" id="renthouse" name="whoathome" value="renthouse">
+            <label for="renthouse">บ้านเช่า</label>
+            <input type="radio" id="dorm" name="whoathome" value="dorm">
+            <label for="dorm">หอพัก</label>
+            <input type="radio" id="others" name="whoathome" value="others">
+            <label for="others">อื่นๆ ระบุ:</label>
+            <input type="text" id="whoathome_others" name="whoathome_others"><br><br>
+        </section>
+
+        <section class="phase3">
+            <label for="birthday">วัน เดือน ปีเกิด:</label>
+            <input type="date" name="birthday" id="birthday" required>
+            <label for="age">อายุ:</label>
+            <input type="number" name="age" id="age" required>
+            <label for="">ปี</label>
+            <label for="height">ส่วนสูง:</label>
+            <input type="number" name="height" id="height" required>
+            <label for="weight">น้ำหนัก:</label>
+            <input type="number" name="weight" id="weight" required>
+            <label for="">กก.</label><br>
+
+            <label for="nationality">สัญชาติ:</label>
+            <input type="text" name="nationality" id="nationality" required>
+            <label for="ethnicity">เชื้อชาติ:</label>
+            <input type="text" name="ethnicity" id="ethnicity" required>
+            <label for="religion">ศาสนา:</label>
+            <input type="text" name="religion" id="religion" required><br>
+
+            <label for="noid">บัตรประชาชนเลขที่:</label>
+            <input type="text" name="noid" id="noid" required>
+            <label for="whereid">สถานที่ออกบัตร:</label>
+            <input type="text" name="whereid" id="whereid" required>
+            <label for="idexpire">บัตรหมดอายุ:</label>
+            <input type="date" name="idexpire" id="idexpire" required><br>
+
+            <label for="taxpayerid">บัตรผู้เสียภาษีเลขที่:</label>
+            <input type="text" name="taxpayerid" id="taxpayerid" required>
+            <label for="socialsecurityid">บัตรประกันสังคมเลขที่:</label>
+            <input type="text" name="socialsecurityid" id="socialsecurityid" required><br>
+
+            <label for="militarycondition">สภาพทางทหาร:</label>
+            <input type="radio" name="militarycondition" id="except" value="except" required>
+            <label for="except">ได้รับการยกเว้น</label>
+            <input type="radio" name="militarycondition" id="release" value="release">
+            <label for="release">ปลดการเป็นทหารกองหนุน</label>
+            <input type="radio" name="militarycondition" id="qualifiedmilitary" value="qualifiedmilitary">
+            <label for="qualifiedmilitary">ยังไม่ได้รับการเกณฑ์ จะเกณฑ์ในปี:</label>
+            <input type="text" name="qualifiedmilitary_year" id="qualifiedmilitary_year"><br>       
+        </section>
+
+        <section class="phase4">
+            <h2>ประวัติครอบครัว</h2>
+            <label for="status">สถานภาพ:</label>
+            <input type="radio" name="status" id="single" value="single" required>
+            <label for="single">โสด</label>
+            <input type="radio" name="status" id="marry" value="marry">
+            <label for="marry">แต่งงาน</label>
+            <input type="radio" name="status" id="widowed" value="widowed">
+            <label for="widowed">หม้าย</label>
+            <input type="radio" name="status" id="divorce" value="divorce">
+            <label for="divorce">แยกกัน/หย่า</label><br>
+
+            <label for="statusmarry">กรณีแต่งงาน:</label>
+            <input type="radio" name="statusmarry" id="enroll" value="enroll">
+            <label for="enroll">จดทะเบียน</label>
+            <input type="radio" name="statusmarry" id="notenroll" value="notenroll">
+            <label for="notenroll">ไม่ได้จดทะเบียน</label><br>
+
+            <label for="spouse">ชื่อภรรยา/สามี:</label>
+            <input type="text" name="spouse" id="spouse"><br>
+
+            <label for="wherespousejob">ชื่อสถานที่ทำงาน:</label>
+            <input type="text" name="wherespousejob" id="wherespousejob"><br>
+
+            <label for="positionspouse">ตำแหน่ง:</label>
+            <input type="text" name="positionspouse" id="positionspouse"><br>
+
+            <label for="havebaby">มีบุตร:</label>
+            <input type="number" name="havebaby" id="havebaby" min="0">
+            <label for="havebaby">คน</label>
+            <label for="badystuding">จำนวนบุตรที่กำลังศึกษา:</label>
+            <input type="number" name="badystuding" id="badystuding" min="0">
+            <label for="badystuding">คน</label>
+            <label for="badynotstuding">จำนวนบุตรที่ยังไม่เข้าศึกษา:</label>
+            <input type="number" name="badynotstuding" id="badynotstuding" min="0">
+            <label for="badynotstuding">คน</label>
+            <input type="submit" value="Submit">
+        </section>
+    </form>
+</body>
+</html>

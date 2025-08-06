@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+    
+    
+}
+body{
+    width: auto;
+    height: 100%;
+}
+header{
+    /* margin-left: 150px; */
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+}
+header h1{
+    font-size: 1.4em;
+}
+header h2{
+    font-size: 1.3em; 
+    font-weight: 300;
+    margin-top: 10px;
+}
+.phase1 , .phase2 , .phase3 {
+    margin: 0 400px ;
+    top: 0;
+    left: 0;
+    
+}
+.phase4{
+    margin: 0px 400px 100px 400px;
+    top: 0;
+    left: 0;
+    
+}
+.phase1 h2  {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.phase2 h2, .phase4 h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.phase1 label,.phase2 label,.phase3 label{
+    margin-right: 20px;
+}
+.phase4 label {
+    margin-right: 20px;
+}
+.photo-table img{
+    position: absolute;
+    top: 40px;
+    right: 400px;
+    border: 1px solid black;
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+}
+.phase1 input[type="text"],.phase1 input[type="number"]{
+    width: 40%
+}
+.phase2 input[type="text"],.phase2 input[type="email"],.phase2 input[type="number"]{
+    width: 22%
+}
+.phase3 input[type="text"],.phase3 input[type="number"]{
+    width: 21%
+}
+.phase4 input[type="text"],.phase4 input[type="number"]{
+    width: 10%
+}
+input#spouse,input#wherespousejob {
+    width: 40%; /* Adjust as needed */
+    
+}
+input#positionspouse{
+    width: 30%;
+}
+label[for="address"],label[for="address now"] {
+    font-weight: 700;
+    
+}
+
+
+
+
+
+
+
